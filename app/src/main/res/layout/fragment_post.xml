@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Post"
+        android:background="@drawable/iback"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/RrquestButtonID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:src="@drawable/plus"
+                android:tint="@android:color/white"
+                app:backgroundTint="@color/colorPrimary">
+
+            </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/CardViewID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
